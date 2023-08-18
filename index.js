@@ -6,6 +6,8 @@ const app = express();
 
 app.use(express.static('public'));
 
+// note more middleware is needed to make req.body work
+
 const PORT = process.env.PORT || 4013;
 
 app.post('/api/topup', (req, res) => {
@@ -18,6 +20,9 @@ app.post('/api/use', (req, res) => {
 
 app.get('/api/balances', (req, res) => {
     // return all the electricity balances
+    res.json({
+        units : 77
+    })
 });
 
 app.listen(PORT, () => console.log(`App started on port: ${PORT}`))

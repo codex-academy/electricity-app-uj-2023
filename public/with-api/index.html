@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="../style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
     <script src="./electricity.with-api.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Electricity app with API</title>
+
     
 </head>
 
@@ -66,7 +68,7 @@
                         Units available
                     </td>
                     <td>
-                        <span class="total unitsAvailable" >0</span>
+                        <span class="total unitsAvailable" x-text="unitsAvailable" >0</span>
                     </td>
                 </tr>
                 <tr>

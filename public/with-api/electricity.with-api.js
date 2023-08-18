@@ -2,17 +2,24 @@ document.addEventListener('alpine:init', () => {
     Alpine.data('electricity', () => {
         return {
             appVersion : '1.0.with-api',
+            unitsAvailable : 0,
+            init(){
+                this.getBalances().then(result => {
+                    this.unitsAvailable = result.data.units;
+                })
+            },
             appliances : {
-                'Stove': 10, 
-                'Kettle': 5, 
-                'TV': 3, 
-                'Fridge': 13
+                
             },
             topUpElectricity(amount) {
                 
             },
-            getUnitsAvailable() {
-                return this.unitsAvailable;
+            getBalances() {
+                // return this.unitsAvailable;
+                
+                return axios.get('/api/balances')
+                    
+
             },
 
             useAppliance(appliance) {
