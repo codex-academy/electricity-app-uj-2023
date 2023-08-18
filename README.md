@@ -73,6 +73,14 @@ Deploy to Render.
 
 Change into the app folder and run:
 
+To install all the npm dependencies run:
+
+```
+npm install
+```
+
+Run the app in dev mode using:
+
 ```
 npm run dev
 ```
