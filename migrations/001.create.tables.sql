@@ -9,6 +9,7 @@ create table units(
     units_available integer,
     total_units_bought integer,
     total_amount_spent integer,
-    advance_taken integer -- 0 or 1
+    advance_taken integer -- 0 or 1,
+    advance_amount_outstanding integer
 );
 
