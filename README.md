@@ -41,34 +41,36 @@ If the advance has been used show a green tick. An advance can only be used once
 
 ## Files 
 
-* Make all the unit tests pass in `electricity.test.js`. Run test from `test/index.html`
-* Fix failing unit tests by implementing the `Electricity` Factory Function in `electricity.js`. 
-* Implement the DOM functionality in the `electricity.dom.js` file that is needed to make the widget in `index.html` functional.
+There are two versions of the API one with and one without an API.
 
-## Add localStorage
+You need to attempt both, but first complete the `no-api` version of the project.
 
-Use localStorage to ensure that the numbers/data shown in the middle section shows correctly after a refresh. 
+Create the widget without the API first. Find the files for that in the `public/no-api` folder.
+
+Once done with that work on the API that is using the API. The files for that is in `public/with-api`. The API files is in `index.js`, `electricity.sql.js` files. There are migrations in the `migrations` folder, that creates two table namely `devices` & `units`.
+
+
 
 ## Fork & clone 
 
-Fork and clone this repo. And deploy to GitHub pages.
-Share the source code & deployed link in the Feedback system link emailed to you.
+Fork and clone this repo.
+Deploy to Render.
+
+Change into the app folder and run `npm run dev`.
+
+The app will start on port `4013` you can open the app here - [http://localhost:4013](http://localhost:4013)
 
 ## Work submission 
 
-Check your EMAIL for the links to submit your GitHub Pages URL and the URL to your GitHub repository on feedback.projectcodex.co. 
-
-## Loadshedding
-
-If you are working remotely and you are experiencing load shedding please let us know in advance. 
+Share the source code & deployed link in the Feedback system link emailed to you.
 
 ## Planning
 
-Spend the first 30 minutes of your assessment on planning. Read through all the different scenarios & create a Kanban Board with the tasks you think you need to complete. Email a link to your Kanban board to `mentors@projectcodex.co`. Create pseudo code using code comments to help you think through what you need to do. 
+Spend the first 30 minutes of your Solo coding session on planning. Read through all the different scenarios & create a Kanban Board with the tasks you think you need to complete. Email a link to your Kanban board to `uj-mentors@projectcodex.co`. 
 
 ## Ask
 
-**Ask** for **help** if needed - via slack in the `#awd-assessments` or email `mentors@projectcodex.co`.
+**Ask** for **help** if needed - via slack in the `#solo-coding` channel or email `uj-mentors@projectcodex.co`.
 
 **Ask** if you need help or clarity. 
 
