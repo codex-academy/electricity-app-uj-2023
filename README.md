@@ -41,22 +41,30 @@ If the advance has been used show a green tick. An advance can only be used once
 
 ## Files 
 
-There are two versions of the API one with and one without an API.
+There are two versions of the API **one with** and **one without** an **API**.
 
-You need to attempt both, but first complete the `no-api` version of the project.
+You need to attempt both, **but first** complete the `no-api` version of the project.
+
+On the landing page of the Widgets you will see a link to both versions of the API.
+
+### No API widget
 
 Create the widget without the API first. Find the files for that in the `public/no-api` folder.
 
+### API widget
+
 Once done with that work on the API that is using the API. The files for that is in `public/with-api`. The API files is in `index.js`, `electricity.sql.js` files. There are migrations in the `migrations` folder, that creates two table namely `devices` & `units`.
 
-
-
-## Fork & clone 
+## Fork, clone & deploy
 
 Fork and clone this repo.
 Deploy to Render.
 
-Change into the app folder and run `npm run dev`.
+Change into the app folder and run:
+
+```
+npm run dev
+```
 
 The app will start on port `4013` you can open the app here - [http://localhost:4013](http://localhost:4013)
 
