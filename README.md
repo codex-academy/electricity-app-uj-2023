@@ -53,7 +53,18 @@ Create the widget without the API first. Find the files for that in the `public/
 
 ### API widget
 
-Once done with that work on the API that is using the API. The files for that is in `public/with-api`. The API files is in `index.js`, `electricity.sql.js` files. There are migrations in the `migrations` folder, that creates two table namely `devices` & `units`.
+Once done with that work on the API that is using the API. 
+
+The files for that is in `public/with-api`. 
+
+The API files are:
+
+* `index.js` - there are 3 API routest to create (they are already defined),
+*  `electricity.sql.js` files.
+
+*  There are migrations in the `migrations` folder, that creates two table namely `devices` & `units`.
+
+The `electricity.db` file should get created & populated already when the app starts up.
 
 ## Fork, clone & deploy
 
